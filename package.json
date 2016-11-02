@@ -2,7 +2,7 @@
   "name": "chives",
   "version": "1.0.0",
   "description": "Chives is my personal slackbot butler",
-  "main": "index.js",
+  "main": "chives.js",
   "dependencies": {
     "botkit": "^0.4.0"
   },
