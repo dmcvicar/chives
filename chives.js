@@ -1,13 +1,13 @@
 var Botkit = require('botkit');
 
 var controller;
-if(process.argv[2]){
-    controller = Botkit.slackbot({ json_file_store: process.argv[2]} );
+if(process.argv[3]){
+    controller = Botkit.slackbot({ json_file_store: process.argv[3]} );
 } else {
     controller = Botkit.slackbot();
 }
 var bot = controller.spawn({
-  token: 'xoxb-98919963959-BTDxEGiys4PMzxGRQVHPvzXD'
+  token: process.argv[2]
 })
 
 bot.startRTM(function(err,bot,payload) {
